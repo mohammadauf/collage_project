@@ -11,9 +11,22 @@
 
 <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <nav class="navbar navbar-light bg-light" id="navbar">
+
+        <div class="container-fluid d-flex  justify-content-center  ">
+            <a class="navbar-brand " href="/">
+                <img src="image/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top ">
+                Daily Blog
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+              </form>
+        </div>
+    </nav>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-3" >
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Daily Blog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,6 +44,9 @@
                         <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link " href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/suggestion.html">Suggestion</a>
                     </li>
 
@@ -39,11 +55,11 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container  text-center">
         <h3 class="text-center my-5">Our Blog</h3>
         <hr>
         <!-- blog 1 -->
-        <div id="blog1">
+        <div id="blog1 ">
             <h2>Best laptop buy in 2022</h2>
             <p>The best laptop of 2022 can come with a variety of brands, prices, and features. Here, we’ve got the rest
                 of the best laptops, Windows 10 business laptop, gaming laptops, Chromebooks, laptops for school.</p>
@@ -134,14 +150,14 @@
         <hr>
         <!-- Blog 3 -->
         <div id="blog3">
-            <h2>Top 3 Programming Languages To Learn in 2021</h2>
+            <h2>Top 3 Programming Languages To Learn in 2022</h2>
             <p>A programming language refers to the means of communication that is used by humans to instruct computers
                 to perform specified tasks. These languages use particular coding syntax to create programs to perform
                 specialized tasks. Software programming is a lucrative career option. As per the survey, programming
                 jobs are expected to rise by 21% by the year 2028. Wikipedia claims that there are around 700
                 programming languages. So deciding which one to learn can be confusing.</p>
             <p>In this blog, we will discuss the top 3 programming languages to learn in 2022. So let’s get started</p>
-            <h6>1. Python</h6>
+            <h5>1. Python</h5>
             Python can be regarded as the future of programming languages. As per the latest statistics, Python is the
             main coding language for around 80% of developers. The presence of extensive libraries in Python facilitates
             artificial intelligence, data science, and machine learning processes. Currently, Python is trending and can
@@ -155,7 +171,7 @@
             <li>Incorporated the variants of Java and C like CPython, Jython, etc.</li>
             <li>GUI support.</li>
             <li>Companies working on Python: Intel, Facebook, Spotify, Netflix, etc. </li>
-            <h6>2. Java</h6>
+            <h5>2. Java</h5>
             <p>Java is one of the most powerful programming languages that is currently used in more than 3 billion
                 devices. Java is currently one of the most trending technology. It is used in desktop applications,
                 mobile applications, web development, Artificial intelligence, cloud applications, and many more. This
@@ -167,7 +183,7 @@
             <li>Enhanced productivity, performance, and security</li>
             <li>It is the most secure language</li>
             <li>Companies working on Java are Amazon, Adobe, Flipkart, Instagram, etc.</li>
-            <h6>3. JavaScript</h6>
+            <h5>3. JavaScript</h5>
             <p>JavaScript is one of the world’s most popular programming languages on the web. As per the survey, more
                 than 97 percent of the websites use JavaScript on the client-side of the webpage.</p>
             <li>It has a well-organized codebase that provides enhanced productivity and readability. </li>
@@ -180,11 +196,33 @@
                 career.</p>
         </div>
     </div>
-    <!-- footer section -->
-    <footer class="bg-dark text-center">
+     <!-- footer section -->
+     <footer class="bg-dark text-center">
         <div class="text-center text-light p-3">
-            © 2020 Copyright : <span class="text-light">Mohammad Auf</span>
+            <div class="row">
+                <div class="col"> Contact
+                    <div> <a href="">91234567896</a> </div>
+                    <div> <a href=""> mohammadauf11@gmail.com</a></div>
+                </div>
+                <div class="col">Links
+                    <div>
+                      <div> <a href="/">Home</a></div> 
+                       <div><a href="/blog.html">Blog</a></div> 
+                       <div> <a href="/contact.html">Contact</a></div>
+                        <div><a href="about.html">About</a></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <a href="#navbar">Back to top</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col"> © 2020 Copyright : <span class="text-light">Mohammad Auf</span></div>
+            </div>
         </div>
+
     </footer>
 </body>
 <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
